@@ -1,0 +1,146 @@
+<aside>
+💡 컴퓨터 그래픽 좌표와 픽셀
+
+</aside>
+
+- 좌측 상단(0,0) 수학에서의 중심점 같은 역할을 한다.
+- 수학과 다르게 내려갈수록 숫자가 커짐.
+    
+    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5b554aaa-64b9-482d-8187-ec8ad53bbf60/cba07db1-a58b-41ef-8694-1a0f15a2cca9/Untitled.png)
+    
+    <aside>
+    💡 프로세싱 환경 세팅하기
+    
+    </aside>
+    
+- 나눔고딕코딩 설치
+- 다국어 언어 입력 허용 꼭 체크!
+- 코딩 자동완성 꼭 체크!
+
+<aside>
+💡 인터페이스 설명
+
+</aside>
+
+- Java 누르면 다른 다양한 모드 창 실행됨.
+- k 누르면 파일 자동으로 열림
+- Console:확인하고싶을떄 사용
+- Errors:문제 정리
+
+<aside>
+💡 코딩 시작하기 기본 문법
+
+</aside>
+
+- 명령어 size
+- size는 중간에 바꿀 수 없음.
+- 창여러개도 못만듦
+- 이 부분이 살짝 불편할 수 있음;
+
+```arduino
+size(500,500);
+```
+
+---
+
+- () 사이에는 매개변수를 넣어줄 수 있는데 함수라 부름
+- 참조할 수 있는 사전을 **레퍼런스 라 부른다.**
+- 여기서 processing에서 사용 할 수 있는 명령어들이 정렬되어 있음.(생각보다 적음)
+
+---
+
+<aside>
+💡 점을 찍어보자 point(x, y);
+
+</aside>
+
+- 명령어 point
+
+```arduino
+point(250,250);
+```
+
+---
+
+<aside>
+💡 선을 그려보자 line(x1, y1, x2, y2);
+
+</aside>
+
+- 명령어 line
+- 순서대로(x좌표,y좌표,x좌표,y좌표)
+
+```arduino
+line(10,10,490,10);
+```
+
+---
+
+<aside>
+💡 면, 사각형를그려보자 rect(a, b, c, d);
+
+</aside>
+
+- 명령어 rect
+- 순서대로(x좌표,y좌표,넓이,높이)
+
+```arduino
+rect(0,250,250,250);
+```
+
+---
+
+<aside>
+💡 원을 그려보자 ellipse(a, b, c, d);
+
+</aside>
+
+- 명령어 ellipse
+
+```arduino
+ellipse(250,250,100,100);
+```
+
+---
+
+<aside>
+💡 선의 색을 바꿔보자 stroke(gray);
+
+</aside>
+
+- 명령어 stroke(gray);
+
+```arduino
+size(500,500);
+stroke(50);
+```
+
+---
+
+<aside>
+💡 컬러로 선의 색을 바꿔보자 stroke(a, b, c);
+
+</aside>
+
+- 명령어 **stroke(v1, v2, v3);**
+- 도구에서 색상선택 가능!
+
+---
+
+<aside>
+💡 면의 색을 바꿔보자 fill();
+
+</aside>
+
+- 명령어 **fill(v1,v2,v3)**
+- 명령어 **fill(v1,v2,v3,alpha)**
+
+---
+
+<aside>
+💡 면 혹은 선을 그리지 말아라 noFill(); noStroke();
+
+</aside>
+
+- 명령어 noStroke();
+- 명령어 noFill();
